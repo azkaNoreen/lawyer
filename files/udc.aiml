@@ -1,12 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
-  <category>
-    <pattern>hi</pattern>
-    <template> How Can I help you? </template>
-  </category>
-  
    <category>
-    <pattern>what is your name?</pattern>
-    <template> My name is Azka. </template>
+    <pattern>what is your name</pattern>
+    <template> My name is Azka </template>
   </category>
+   <category>
+    <pattern>what is *</pattern>
+    <template>
+        <think><set name="lang"><star /></set></think>
+        
+        <condition name="lang" value="java"> java is high level lang</condition>
+        <condition name="lang" value="python">python is the easiest language</condition>
+        <condition name="lang" value="c"> c is very silly!</condition>
+
+        
+       </template>
+  </category>
+    <!-- set and get
+
+   <category>
+   <pattern>my name is *</pattern>
+    <template>hi <set name="username"><star /></set></template>
+  </category>
+  <category>
+    <pattern>what is my name</pattern>
+    <template>your name is <get name="username"/></template>
+  </category>
+  <category>
+    <pattern>tell me what is *</pattern>
+    <template><srai>what is <star /></srai></template>
+  </category> 
+  
+  that
+  <category>
+    <pattern>tell me more</pattern>
+    <that> MY NAME IS AZKA </that>
+    <template>nothing to say </template>
+  </category>  -->
+  
+  
+  
 </aiml>
