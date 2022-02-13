@@ -2,6 +2,11 @@
 <aiml>
   <category>
     <pattern>hi</pattern>
-    <template> How Can I help you?</template></template>
+    <template> How Can I help you? </template>
+  </category>
+  
+   <category>
+    <pattern>what is your name?</pattern>
+    <template> My name is Azka. </template>
   </category>
 </aiml>
