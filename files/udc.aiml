@@ -5,7 +5,38 @@
     <template> My name is Azka </template>
   </category>
    <category>
-    <pattern>what is *</pattern>
+       <pattern>Do you want to be my friend</pattern>
+       <template>
+           <reply>
+               <text>Yes!</text>
+               <postback>YESCLICKED</postback>
+           </reply>
+           <reply>
+               <text>No!</text>
+               <postback>NOCLICKED</postback>
+           </reply>
+       </template>
+   </category>
+   <category>
+       <pattern>YESCLICKED</pattern>
+       <template>I also want to be your friend</template>
+   </category>
+      <category>
+       <pattern>NOCLICKED</pattern>
+       <template>So sad, waiting for you too.</template>
+   </category>
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+    <!-- <pattern>what is *</pattern>
     <template>
         <think><set name="lang"><star /></set></think>
         
@@ -16,7 +47,7 @@
         
        </template>
   </category>
-    <!-- set and get
+    set and get
 
    <category>
    <pattern>my name is *</pattern>
